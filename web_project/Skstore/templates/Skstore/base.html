@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    {% block title %}{% endblock %} 
+
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Skstore/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'Skstore/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Skstore/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Skstore/reset.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Skstore/owl-carousel.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Skstore/lightbox.css' %}">
+
+    </head>
+    
+    <body>
+    
+    
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    
+    {% block content %}{% endblock %} 
+    
+    
+    
+    
+    <div class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-heading">
+                        <h2>By Subscribing To Our Newsletter You Can Get 25% Off</h2>
+                        <span>of your first Purchase</span>
+                    </div>
+                    <form id="subscribe" action="" method="get">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <fieldset>
+                              <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-5">
+                            <fieldset>
+                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-2">
+                            <fieldset>
+                              <button type="submit" id="form-submit" class="main-dark-button"><i class="fa fa-paper-plane"></i></button>
+                            </fieldset>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li>Store Location:<br><span>950 St-Anne Street, Bathurst, New-Brunswick</span></li>
+                                <li>Phone:<br><span>506-012-3456</span></li>
+                                <li>Office Location:<br><span>Montreal</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Work Hours:<br><span>09:00 AM - 7:30 PM Daily</span></li>
+                                <li>Email:<br><span>info@skstore.ca</span></li>
+                                <li><br>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img src="assets/img/logo2.png" alt="hexashop ecommerce templatemo">
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Shopping &amp; Categories</h4>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <h4>Useful Links</h4>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+
+    {% load static %}
+
+    <script src="{% static 'Skstore/jquery-2.1.0.min.js' %}"></script> 
+    <script src="{% static 'Skstore/popper.js' %}"></script>
+    <script src="{% static 'Skstore/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Skstore/owl-carousel.js' %}"></script>
+    <script src="{% static 'Skstore/accordions.js' %}"></script>
+    <script src="{% static 'Skstore/datepicker.js'%}"></script>
+    <script src="{% static 'Skstore/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'Skstore/waypoints.min.js' %}"></script>
+    <script src="{% static 'Skstore/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'Skstore/imgfix.min.js' %}"></script> 
+    <script src="{% static 'Skstore/slick.js' %}"></script> 
+    <script src="{% static 'Skstore/lightbox.js' %}"></script> 
+    <script src="{% static 'Skstore/isotope.js' %}"></script> 
+    <script src="{% static 'Skstore/custom.js' %}"></script>
+
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html>
