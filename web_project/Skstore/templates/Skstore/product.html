@@ -9,12 +9,13 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
+                                         
                         <a href="{% url 'home' %}" class="logo">
-                            <img src="assets/img/logo">
+                                {% load static %}
+                                <img src="{% static 'Skstore/images/logo' %}">
                         </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
+                            
+
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="{% url 'home' %}" class="active">Home</a></li>
             

@@ -9,8 +9,9 @@
                 <div class="col-12">
                     <nav class="main-nav">
                     
-                        <a href="index.html" class="logo">
-                            <img src="assets/img/logo">
+                        <a href="{% url 'home' %}" class="logo">
+                            {% load static %}
+                            <img src="{% static 'Skstore/images/logo' %}">
                         </a>
                     
                         
@@ -46,7 +47,8 @@
                                     </div>
                                 
                             </div>
-                            <img src="assets/img/sneaker1.jpg" alt="">
+                            {% load static %}
+                            <img src="{% static 'Skstore/images/sneaker1.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -57,19 +59,19 @@
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Nike</h4>
+                                            <h4>{{ brand.0.name }}</h4>
                                             <span>Lates releases</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Nike</h4>
+                                                <h4>{{ brand.0.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="{% url 'product' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/img/Nike.jpg">
+                                        <img src="{{ brand.0.image }}">
                                     </div>
                                 </div>
                             </div>
@@ -78,20 +80,20 @@
                                     <div class="thumb">
                                         <div class="inner-content">
                                             <div class ="black">
-                                                <h4 >Adidas</h4>
+                                                <h4 >{{ brand.1.name }}</h4>
                                                 <span>Latest Release</span>
                                             </div>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Adidas</h4>
+                                                <h4>{{ brand.1.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="{% url 'product' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/img/adidas.jpg">
+                                        <img src="{{ brand.1.image }}">
                                     </div>
                                 </div>
                             </div>
@@ -99,19 +101,19 @@
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>Puma</h4>
+                                            <h4>{{ brand.2.name }}</h4>
                                             <span>Latest releases</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>Puma</h4>
+                                                <h4>{{ brand.2.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="{% url 'product' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/img/puma.jpg">
+                                        <img src="{{ brand.2.image }}">
                                     </div>
                                 </div>
                             </div>
@@ -119,21 +121,21 @@
                                 <div class="right-first-image">
                                     <div class="thumb">
                                         <div class="inner-content">
-                                            <h4>New Balance</h4>
+                                            <h4>{{ brand.3.name }}</h4>
                                             <span>Latest releases</span>
                                         </div>
                                         <div class="hover-content">
                                             <div class="inner">
-                                                <h4>New Balance</h4>
+                                                <h4>{{ brand.3.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
                                                     <a href="{% url 'product' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <img src="assets/img/NBalance.jpg">
+                                        <img src="{{ brand.3.image }}">
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
