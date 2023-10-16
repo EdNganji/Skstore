@@ -67,7 +67,7 @@
                                                 <h4>{{ brand.0.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
-                                                    <a href="{% url 'product' %}">Discover More</a>
+                                                    <a href="{% url 'showcase' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -89,7 +89,7 @@
                                                 <h4>{{ brand.1.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
-                                                    <a href="{% url 'product' %}">Discover More</a>
+                                                    <a href="{% url 'showcase' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +109,7 @@
                                                 <h4>{{ brand.2.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
-                                                    <a href="{% url 'product' %}">Discover More</a>
+                                                    <a href="{% url 'showcase' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,7 +129,7 @@
                                                 <h4>{{ brand.3.name }}</h4>
                                                 <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
                                                 <div class="main-border-button">
-                                                    <a href="{% url 'product' %}">Discover More</a>
+                                                    <a href="{% url 'showcase' %}">Discover More</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,114 +143,6 @@
             </div>
         </div>
     </div>
-    
-    <section id="showcase">
-        <div class="container-fluid">
-            <div class="section-heading">
-                <h1 class="text-center" id="showcase2">Showcase</h1>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-4 mt-4">
-                    <div class="card infosText">
-                        <div class="card-body ">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/puma.jpg" alt="" width="90%" height="85%">
-                                </div>
-                                <div class="down-content">
-                                    <br><h4>School Collection</h4>
-                                    <span>$80.00</span>
-                                    
-                                </div>
-                            </div>
-                            <span class="mdtext">{{bathu.name}}</span>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card infosText">
-                        <div class="card-body ">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/puma.jpg" alt="" width="90%" height="85%">
-                                </div>
-                                <div class="down-content">
-                                    <br><h4>School Collection</h4>
-                                    <span>$80.00</span>
-                                    
-                                </div>
-                            </div>
-                            <span class="mdtext">{{bathu.name}}</span>
-                        </div>
-                    </div>  
-                </div>
-                
-               
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 mt-4 ">
-                    <div class="card infosText">
-                        <div class="card-body ">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/puma.jpg" alt="" width="90%" height="85%">
-                                </div>
-                                <div class="down-content">
-                                    <br><h4>School Collection</h4>
-                                    <span>$80.00</span>
-                                    
-                                </div>
-                            </div>
-                            <span class="mdtext">{{bathu.name}}</span>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 mt-4">
-                    <div class="card infosText">
-                        <div class="card-body ">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/puma.jpg" alt="" width="90%" height="85%">
-                                </div>
-                                <div class="down-content">
-                                    <br><h4>School Collection</h4>
-                                    <span>$80.00</span>
-                                    
-                                </div>
-                            </div>
-                            <span class="mdtext">{{bathu.name}}</span>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card infosText">
-                        <div class="card-body ">
-                            <div class="item">
-                                <div class="thumb">
-                                    <img src="assets/img/puma.jpg" alt="" width="90%" height="85%">
-                                </div>
-                                <div class="down-content">
-                                    <br><h4>School Collection</h4>
-                                    <span>$80.00</span>
-                                    
-                                </div>
-                            </div>
-                            <span class="mdtext">{{bathu.name}}</span>
-                        </div>
-                    </div>  
-                </div>
-
-            </div>
-            
-        </div>
-    </section>
 
     
     <section class="section" id="releases">
@@ -273,7 +165,7 @@
                                 <div class="thumb">
                                     <div class="hover-content">
                                         <ul>
-                                            <li><a href="{% url 'product' %}"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/product/0"><i class="fa fa-eye"></i></a></li>
                                         </ul>
                                     </div>
                                     <img src="assets/images/kid-01.jpg" alt="">
@@ -294,7 +186,7 @@
                                 <div class="thumb">
                                     <div class="hover-content">
                                         <ul>
-                                            <li><a href="{% url 'product' %}"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/product/0"><i class="fa fa-eye"></i></a></li>
                                         </ul>
                                     </div>
                                     <img src="assets/images/kid-02.jpg" alt="">
@@ -315,7 +207,7 @@
                                 <div class="thumb">
                                     <div class="hover-content">
                                         <ul>
-                                            <li><a href="{% url 'product' %}"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/product/0"><i class="fa fa-eye"></i></a></li>
                                            </ul>
                                     </div>
                                     <img src="assets/images/kid-03.jpg" alt="">
@@ -336,7 +228,7 @@
                                 <div class="thumb">
                                     <div class="hover-content">
                                         <ul>
-                                            <li><a href="{% url 'product' %}"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/product/0"><i class="fa fa-eye"></i></a></li>
                                             </ul>
                                     </div>
                                     <img src="assets/images/kid-01.jpg" alt="">

@@ -1,0 +1,147 @@
+{% extends "Skstore/base.html" %}
+
+{% block title %}  <title>Sneakers Store</title>{% endblock%}
+
+{%block content %} 
+   <header class="header-area header-sticky">
+       <div class="container">
+           <div class="row">
+               <div class="col-12">
+                   <nav class="main-nav">
+                   
+                       <a href="{% url 'home' %}" class="logo">
+                           {% load static %}
+                           <img src="{% static 'Skstore/images/logo' %}">
+                       </a>
+                   
+                       
+                       <ul class="nav">
+                           <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                           <li class="scroll-to-section"><a href="#releases">Releases</a></li>
+           
+                       </ul>        
+                       <a class='menu-trigger'>
+                           <span>Menu</span>
+                       </a>
+                       
+                   </nav>
+               </div>
+           </div>
+       </div>
+   </header>
+   
+   
+   <section id="showcase">
+       <div class="container-fluid">
+           <div class="section-heading">
+               <h1 class="text-center" id="showcase2">Showcase</h1>
+           </div>
+           
+           <div class="row justify-content-center">
+               <div class="col-lg-4 mt-4">
+                   <div class="card infosText">
+                       <div class="card-body ">
+                           <div class="item">
+                               <div class="thumb">
+                                {% load static %} 
+                                <a href="/product/{{item.0.id}}/"><img src="{{item.0.image}}"></a>
+                               </div>
+                               <div class="down-content">
+                                   <br><h4>{{item.0.name}}</h4>
+                                   <span>${{item.0.price}}</span>
+                                   
+                               </div>
+                           </div>
+                           
+                       </div>
+                   </div>  
+               </div>
+
+               <div class="col-lg-4 mt-4">
+                   <div class="card infosText">
+                       <div class="card-body ">
+                           <div class="item">
+                               <div class="thumb">
+                                <a href="/product/{{item.1.id}}/"><img src="{{item.1.image}}" alt="" width="90%" height="85%"></a>
+                               </div>
+                               <div class="down-content">
+                                <br><h4>{{item.1.name}}</h4>
+                                <span>${{item.1.price}}</span>
+                                   
+                               </div>
+                           </div>
+                           
+                       </div>
+                   </div>  
+               </div>
+               
+              
+           </div>
+
+           <div class="row justify-content-center">
+               <div class="col-lg-4 mt-4 ">
+                   <div class="card infosText">
+                       <div class="card-body ">
+                           <div class="item">
+                               <div class="thumb">
+                                   <a href="/product/{{item.2.id}}/"><img src="{{item.2.image}}" alt="" width="90%" height="85%"></a>
+                               </div>
+                               <div class="down-content">
+                                <br><h4>{{item.2.name}}</h4>
+                                <span>${{item.2.price}}</span>
+                                   
+                               </div>
+                           </div>
+                           
+                       </div>
+                   </div>  
+               </div>
+           </div>
+
+           <div class="row justify-content-center">
+               <div class="col-lg-4 mt-4">
+                   <div class="card infosText">
+                       <div class="card-body ">
+                           <div class="item">
+                               <div class="thumb">
+                                   <a href="/product/{{item.3.id}}/"><img src="{{item.3.image}}" alt="" width="90%" height="85%"></a>
+                               </div>
+                               <div class="down-content">
+                                <br><h4>{{item.3.name}}</h4>
+                                <span>${{item.3.price}}</span>
+                                   
+                               </div>
+                           </div>
+                           
+                       </div>
+                   </div>  
+               </div>
+
+               <div class="col-lg-4 mt-4">
+                   <div class="card infosText">
+                       <div class="card-body ">
+                           <div class="item">
+                               <div class="thumb">
+                                <a href="/product/{{item.4.id}}/"><img src="{{item.4.image}}" alt="" width="90%" height="85%"></a>
+                               </div>
+                               <div class="down-content">
+                                <br><h4>{{item.4.name}}</h4>
+                                <span>${{item.4.price}}</span>
+                                   
+                               </div>
+                           </div>
+                           
+                       </div>
+                   </div>  
+               </div>
+
+           </div>
+           
+       </div>
+   </section>
+
+   
+   
+   
+ {% endblock %}
+  
